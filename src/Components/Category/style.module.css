@@ -1,0 +1,27 @@
+.CategoryBox {
+  padding-top: 24px;
+}
+.CategoryHeading {
+  text-transform: capitalize;
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.CategoryBoxList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.categoryBoxItem {
+  border: 1px solid rgba(215, 215, 215, 0.5);
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.categoryBoxItem:hover {
+  color: #fff;
+  background-color: #5a4044;
+}
