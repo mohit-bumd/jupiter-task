@@ -1,6 +1,11 @@
 import Home from "../Pages/Home";
-import "./App.css";
+import { AppProvider } from "../Context";
 
-const App = () => <Home />;
-
+const App = () => {
+  return (
+    <AppProvider>
+      <Home />
+    </AppProvider>
+  );
+};
 export default App;
