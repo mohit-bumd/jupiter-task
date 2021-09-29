@@ -23,5 +23,21 @@
 
 .categoryBoxItem:hover {
   color: #fff;
-  background-color: #5a4044;
+  background-color: #17555e;
+}
+
+.categoryBoxItemSelected {
+  background-color: #17555e;
+  color: #fff;
+  border: 1px solid #17555e;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.categoryBoxItemSelected:hover {
+  background-color: #fff;
+  color: #17555e;
 }
