@@ -1,5 +1,5 @@
 .header {
-  border: 1px solid rgba(215, 215, 215, 0.5);
+  border-bottom: 1px solid rgba(215, 215, 215, 0.5);
   margin: 0px;
   position: fixed;
   top: 0;
@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   height: 60px;
+  justify-content: space-between;
 }
 .headerLogo {
   width: 20%;
@@ -35,10 +36,29 @@
   align-items: center;
 }
 li.headerListItem {
-  width: 5rem;
+  width: 45px;
+  padding: 10px 5px;
   text-align: center;
   color: #777777;
+  position: relative;
 }
+
+.notification {
+  background-color: #17555e;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+  right: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
 .headerInputField {
   width: 100%;
   padding: 1rem 2rem;
@@ -50,12 +70,13 @@ li.headerListItem {
   background: #ec6661;
   border: none;
   color: #fff;
-  padding: 1rem;
+  padding: 0 10px;
+  height: 50px;
   border-radius: 5px;
   text-transform: capitalize;
   cursor: pointer;
 }
-.userList {
+.navOption {
   display: flex;
   list-style: none;
   width: 50%;
@@ -77,4 +98,73 @@ li.headerListItem {
   font-size: 2rem;
   transform: translate(-50%, -37%);
   color: #ddd;
+}
+.cartButton {
+  background: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .headerLogo {
+    width: 30%;
+  }
+
+  .headerInput {
+    width: 33%;
+  }
+
+  .headerOption {
+    width: 46%;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerContainer {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+
+  .headerLogo {
+    width: 30%;
+  }
+
+  .headerInput {
+    width: 30%;
+  }
+
+  .headerOption {
+    width: 40%;
+    justify-content: flex-end;
+  }
+
+  .headerButtonBox {
+    display: none;
+  }
+  .navOption {
+    justify-content: space-between;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  li.headerListItem:first-child {
+    display: none;
+  }
+  .headerOption {
+    width: 60%;
+    justify-content: flex-end;
+  }
+  li.headerListItem:nth-child(2) {
+    display: none;
+  }
+  li.headerListItem:last-child {
+    display: block;
+  }
+  .headerInput {
+    display: none;
+  }
 }

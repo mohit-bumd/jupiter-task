@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./style.module.css";
-import UserList from "./UserList";
 import { AiOutlineSearch } from "react-icons/ai";
+import NavOptions from "./NavOptions";
+import styles from "./style.module.css";
+
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -23,7 +23,7 @@ const Header = () => {
           <div className={styles.headerButtonBox}>
             <button className={styles.headerButton}>get $20 off</button>
           </div>
-          <UserList />
+          <NavOptions />
         </div>
       </div>
     </header>
