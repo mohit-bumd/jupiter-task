@@ -1,8 +1,8 @@
-section.productRow {
+.productRow {
   margin-top: 20px;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
