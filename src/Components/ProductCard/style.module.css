@@ -1,7 +1,6 @@
 .productBox {
   width: calc(25% - 70px);
-  min-width: 140px;
-  box-shadow: 0 0 7px #ccc;
+  min-width: 210px;
   margin: 20px;
   padding: 30px 15px;
 }
@@ -30,21 +29,49 @@
 }
 .productName {
   padding: 16px 0;
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .productBoxButton {
   text-align: center;
 }
 .productButton {
   width: 100%;
-  padding: 1rem 0;
+  padding: 5px 0;
   text-transform: capitalize;
-  border: 1px solid #d7d7d7;
+  border: 1px solid #17555e;
   background-color: transparent;
-  color: #38c2de;
+  color: #17555e;
+  font-size: 18px;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.productButton:hover {
+  color: #fff;
+  background-color: #17555e;
+}
+
+.productButtonDisabled {
+  width: 100%;
+  padding: 5px 0;
+  text-transform: capitalize;
+  border: 1px solid #17555e;
+  background-color: transparent;
+  color: #17555e;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: not-allowed;
+  border: 1px solid #d7d7d7;
+  background-color: transparent;
+  color: #aaa;
 }
